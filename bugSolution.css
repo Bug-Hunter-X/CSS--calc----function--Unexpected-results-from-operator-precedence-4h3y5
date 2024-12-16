@@ -1,0 +1,14 @@
+/* Incorrect Calculation */
+.element {
+  width: calc(100% - 10px + 5px); /* Incorrect: evaluates to 100% - 15px */
+}
+
+/* Correct Calculation */
+.element {
+  width: calc(100% - (10px - 5px)); /* Correct: evaluates to 100% - 5px */
+}
+
+/* Another example showing improved readability with parentheses */
+.element {
+  width: calc((100% - 10px) + 5px); /* Correct and more readable */
+} 
